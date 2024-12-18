@@ -32,6 +32,7 @@
             tb_veiculo = new TextBox();
             label1 = new Label();
             tb_listaVeiculos = new TextBox();
+            btn_limpar = new Button();
             SuspendLayout();
             // 
             // btn_adicionar
@@ -42,6 +43,7 @@
             btn_adicionar.TabIndex = 1;
             btn_adicionar.Text = "Adicionar";
             btn_adicionar.UseVisualStyleBackColor = true;
+            btn_adicionar.Click += Btn_adicionar_Click;
             // 
             // tb_veiculo
             // 
@@ -67,16 +69,29 @@
             tb_listaVeiculos.Size = new Size(324, 315);
             tb_listaVeiculos.TabIndex = 4;
             // 
+            // btn_limpar
+            // 
+            btn_limpar.Location = new Point(12, 387);
+            btn_limpar.Name = "btn_limpar";
+            btn_limpar.Size = new Size(324, 29);
+            btn_limpar.TabIndex = 5;
+            btn_limpar.Text = "Limpar";
+            btn_limpar.UseVisualStyleBackColor = true;
+            // 
             // F_Principal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(348, 399);
+            ClientSize = new Size(348, 444);
+            Controls.Add(btn_limpar);
             Controls.Add(tb_listaVeiculos);
             Controls.Add(label1);
             Controls.Add(tb_veiculo);
             Controls.Add(btn_adicionar);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
             Name = "F_Principal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Componentes - CFB Cursos";
             ResumeLayout(false);
             PerformLayout();
@@ -87,5 +102,6 @@
         private TextBox tb_veiculo;
         private Label label1;
         private TextBox tb_listaVeiculos;
+        private Button btn_limpar;
     }
 }

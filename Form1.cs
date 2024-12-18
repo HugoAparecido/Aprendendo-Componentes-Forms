@@ -6,5 +6,15 @@ namespace AprendendoForms
         {
             InitializeComponent();
         }
+
+        private void Btn_adicionar_Click(object sender, EventArgs e)
+        {
+            if (tb_veiculo.Text == "")
+            {
+                MessageBox.Show("Digite um Veículo");
+                tb_veiculo.Focus();
+                return;
+            }
+        }
     }
 }

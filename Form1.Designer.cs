@@ -63,6 +63,7 @@
             // 
             // tb_listaVeiculos
             // 
+            tb_listaVeiculos.Font = new Font("Segoe UI", 12F);
             tb_listaVeiculos.Location = new Point(12, 66);
             tb_listaVeiculos.Multiline = true;
             tb_listaVeiculos.Name = "tb_listaVeiculos";
@@ -77,6 +78,7 @@
             btn_limpar.TabIndex = 5;
             btn_limpar.Text = "Limpar";
             btn_limpar.UseVisualStyleBackColor = true;
+            btn_limpar.Click += Btn_limpar_Click;
             // 
             // F_Principal
             // 

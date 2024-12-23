@@ -15,6 +15,17 @@ namespace AprendendoForms
                 tb_veiculo.Focus();
                 return;
             }
+            tb_listaVeiculos.Text += tb_veiculo.Text + ", ";
+            //tb_listaVeiculos.Text = tb_listaVeiculos.Text + tb_veiculo.Text;
+            tb_veiculo.Clear();
+            tb_veiculo.Focus();
+        }
+
+        private void Btn_limpar_Click(object sender, EventArgs e)
+        {
+            tb_listaVeiculos.Clear();
+            tb_veiculo.Clear();
+            tb_veiculo.Focus();
         }
     }
 }

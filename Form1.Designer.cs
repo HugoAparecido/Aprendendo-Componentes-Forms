@@ -33,6 +33,7 @@
             label1 = new Label();
             tb_listaVeiculos = new TextBox();
             btn_limpar = new Button();
+            btn_mostrar = new Button();
             SuspendLayout();
             // 
             // btn_adicionar
@@ -67,6 +68,7 @@
             tb_listaVeiculos.Location = new Point(12, 66);
             tb_listaVeiculos.Multiline = true;
             tb_listaVeiculos.Name = "tb_listaVeiculos";
+            tb_listaVeiculos.ReadOnly = true;
             tb_listaVeiculos.Size = new Size(324, 315);
             tb_listaVeiculos.TabIndex = 4;
             // 
@@ -80,11 +82,22 @@
             btn_limpar.UseVisualStyleBackColor = true;
             btn_limpar.Click += Btn_limpar_Click;
             // 
+            // btn_mostrar
+            // 
+            btn_mostrar.Location = new Point(12, 422);
+            btn_mostrar.Name = "btn_mostrar";
+            btn_mostrar.Size = new Size(324, 29);
+            btn_mostrar.TabIndex = 6;
+            btn_mostrar.Text = "Mostrar Veículos";
+            btn_mostrar.UseVisualStyleBackColor = true;
+            btn_mostrar.Click += Btn_mostrar_Click;
+            // 
             // F_Principal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(348, 444);
+            ClientSize = new Size(348, 487);
+            Controls.Add(btn_mostrar);
             Controls.Add(btn_limpar);
             Controls.Add(tb_listaVeiculos);
             Controls.Add(label1);
@@ -105,5 +118,6 @@
         private Label label1;
         private TextBox tb_listaVeiculos;
         private Button btn_limpar;
+        private Button btn_mostrar;
     }
 }

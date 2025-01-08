@@ -27,5 +27,11 @@ namespace AprendendoForms
             tb_veiculo.Clear();
             tb_veiculo.Focus();
         }
+
+        private void Btn_mostrar_Click(object sender, EventArgs e)
+        {
+            F_Veiculos f_Veiculos = new(tb_listaVeiculos.Text);
+            f_Veiculos.ShowDialog();
+        }
     }
 }
